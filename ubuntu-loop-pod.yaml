@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: ubuntu-loop
+  name: ubuntu-loop
+spec:
+  containers:
+  - image: ubuntu-loop:latest
+    imagePullPolicy: Never
+    name: ubuntu-loop
